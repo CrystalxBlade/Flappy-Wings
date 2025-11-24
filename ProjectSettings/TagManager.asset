@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags: []
   layers:
   - Default
@@ -41,3 +41,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 3810901049
+    locked: 0
+  - name: Ground
+    uniqueID: 2698098335
+    locked: 0
+  - name: Flappy
+    uniqueID: 3480424343
+    locked: 0
+  m_RenderingLayers:
+  - Default
