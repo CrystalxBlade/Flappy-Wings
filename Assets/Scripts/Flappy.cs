@@ -29,4 +29,5 @@ public class Flappy : MonoBehaviour
         coll.enabled = false;
         rb.linearVelocity = Vector2.up * speed;
     }
+    
 }
