@@ -31,5 +31,4 @@ public class Flappy : MonoBehaviour
         rb.linearVelocity = Vector2.up * speed;
         gameOverScreen.SetActive(true);
     }
-
 }
