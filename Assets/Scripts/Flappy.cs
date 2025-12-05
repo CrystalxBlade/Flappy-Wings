@@ -7,6 +7,7 @@ public class Flappy : MonoBehaviour
     Collider2D coll;
     [SerializeField] float speed;
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] GameObject gameOverScreen;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,6 +29,7 @@ public class Flappy : MonoBehaviour
         anim.Play("die");
         coll.enabled = false;
         rb.linearVelocity = Vector2.up * speed;
+        gameOverScreen.SetActive(true);
     }
 
 }
