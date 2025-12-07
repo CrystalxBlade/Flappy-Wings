@@ -10,11 +10,6 @@ public class ScoreCounter : MonoBehaviour
         score = 0;
     }
 
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("counter"))
