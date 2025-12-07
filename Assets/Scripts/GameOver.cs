@@ -1,13 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-    void Update()
-    {
-        
-    }
+    public Text scoreText;
+    public Text highScoreText;
+
+    
 }
