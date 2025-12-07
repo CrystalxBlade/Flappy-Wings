@@ -17,7 +17,7 @@ public class ScoreCounter : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("counter"));
+        if(collision.gameObject.CompareTag("counter"))
         {
             score++;
             scoreText.text = score.ToString();
