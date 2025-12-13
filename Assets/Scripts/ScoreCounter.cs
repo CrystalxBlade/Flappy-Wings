@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
+    [SerializeField] SoundManager sm;
     public Text scoreText;
     public static int score;
     void Start()
@@ -15,6 +16,7 @@ public class ScoreCounter : MonoBehaviour
         {
             score++;
             scoreText.text = score.ToString();
+            sm.Play_Point();
         }
     }
 }

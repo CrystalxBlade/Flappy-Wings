@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Flappy : MonoBehaviour
 {
+    public SoundManager sm;
     [SerializeField] bool isDead = false;
     Animator anim;
     Collider2D coll;
@@ -20,6 +21,7 @@ public class Flappy : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && isDead == false)
         {
             rb.linearVelocity = Vector2.up * speed;
+            sm.Play_Flap();
         }
     }
 
@@ -30,5 +32,6 @@ public class Flappy : MonoBehaviour
         coll.enabled = false;
         rb.linearVelocity = Vector2.up * speed;
         gameOverScreen.SetActive(true);
+        sm.Play_Hit();
     }
 }
