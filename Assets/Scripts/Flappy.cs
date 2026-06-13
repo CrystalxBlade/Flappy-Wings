@@ -2,36 +2,15 @@ using UnityEngine;
 
 public class Flappy : MonoBehaviour
 {
-    public SoundManager sm;
-    [SerializeField] bool isDead = false;
-    Animator anim;
-    Collider2D coll;
-    [SerializeField] float speed;
-    [SerializeField] Rigidbody2D rb;
-    [SerializeField] GameObject gameOverScreen;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        coll = GetComponent<Collider2D>();
+        
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && isDead == false)
-        {
-            rb.linearVelocity = Vector2.up * speed;
-            sm.Play_Flap();
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        isDead = true;
-        anim.Play("die");
-        coll.enabled = false;
-        rb.linearVelocity = Vector2.up * speed;
-        gameOverScreen.SetActive(true);
-        sm.Play_Hit();
+        
     }
 }
