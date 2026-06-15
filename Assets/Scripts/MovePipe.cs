@@ -2,15 +2,10 @@ using UnityEngine;
 
 public class MovePipe : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [SerializeField] float moveSpeed;
     void Update()
     {
-        
+        transform.position += Vector3.left * moveSpeed * Time.deltaTime; 
+        Destroy(gameObject, 4f);
     }
 }
