@@ -2,15 +2,28 @@ using UnityEngine;
 
 public class PipeSpawner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] GameObject pipe;
+    [SerializeField] float time;
+    [SerializeField] float height;
+    float timer;
     void Start()
     {
-        
+        timer = 0;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+
+        if(timer >= time)
+        {
+            timer = 0;
+            Spawn();
+        }
+    }
+
+    void Spawn()
+    {
+        Vector3 pos = transform.position + new Vector3(0, Random.Range(-height, height));
+        Instantiate(pipe, pos, Quaternion.identity);
     }
 }
