@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] AudioSource SFX_Source; 
+    [SerializeField] AudioClip flap, hit, point;
 
-    // Update is called once per frame
-    void Update()
+    public void Flap()
     {
-        
-    }
+        SFX_Source.PlayOneShot(flap);
+    } 
+    public void Hit()
+    {
+        SFX_Source.PlayOneShot(hit);
+    } 
+    public void Point()
+    {
+        SFX_Source.PlayOneShot(point);
+    } 
 }
