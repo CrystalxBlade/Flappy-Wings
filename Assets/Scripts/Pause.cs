@@ -6,7 +6,6 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 0;
     }
-
     public void Resume()
     {
         Time.timeScale = 1;
