@@ -2,15 +2,18 @@ using UnityEngine;
 
 public class TapToPlay : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] GameObject pauseScreen;
+    private void Awake()
     {
-        
+        Time.timeScale = 0f;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0))
+        {
+            Time.timeScale = 1f;
+            Destroy(gameObject);
+            pauseScreen.SetActive(true);
+        }
     }
 }
