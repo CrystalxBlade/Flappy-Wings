@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ScoreCounter : MonoBehaviour
 {
     [SerializeField] Text scoreText;  
-    int score;
+    public static int score;
 
     void Start()
     {
@@ -12,7 +12,7 @@ public class ScoreCounter : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("counter"))
+        if(collision.gameObject.CompareTag("counter"))  
         {
             score++;
             scoreText.text = score.ToString();

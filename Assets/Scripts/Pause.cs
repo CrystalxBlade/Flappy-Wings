@@ -10,7 +10,7 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 1;
     }
-    public void Retry()
+    public static void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
     }
