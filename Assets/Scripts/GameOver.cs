@@ -24,7 +24,6 @@ public class GameOver : MonoBehaviour
         }
         currentScore.text = score.ToString();
     }
-
     public void Retry()
     {
         Pause.Retry();
