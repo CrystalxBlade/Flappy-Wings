@@ -48,8 +48,10 @@ Don’t worry — it’s just because the game is new.
 
 ## 📸 Screenshots
 
-*(Add your screenshots here later)*
-
+![image alt](https://github.com/CrystalxBlade/Flappy-Wings/blob/main/Flappy%201.png?raw=true)
+![image alt](https://github.com/CrystalxBlade/Flappy-Wings/blob/main/Flappy%202.png?raw=true)
+![image alt](https://github.com/CrystalxBlade/Flappy-Wings/blob/main/Flappy%204.png?raw=true)
+![image alt](https://github.com/CrystalxBlade/Flappy-Wings/blob/main/Flappy%203.png?raw=true)
 
 
 ---
