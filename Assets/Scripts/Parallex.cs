@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class Parallex : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] float parallexSpeed;
+    Vector3 startPos;
+    [SerializeField] float endPoint;
     void Start()
     {
-        
+        startPos = transform.position;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if(transform.position.x <= endPoint)
+        {
+            transform.position = startPos;
+        }
+        transform.position += Vector3.left * parallexSpeed * Time.deltaTime;
     }
 }
