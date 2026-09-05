@@ -1,7 +1,7 @@
 
 # Flappy Wings
 
-👉 Play the game: 
+👉 Play the game: https://crystal-x-blade.itch.io/flappy-wings
 
 ---
 
